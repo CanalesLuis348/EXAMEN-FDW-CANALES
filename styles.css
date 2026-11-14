@@ -1,0 +1,150 @@
+/* You can add global styles to this file, and also import other style files */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f4f8;
+    color: #333;
+    line-height: 1.6;
+}
+
+
+header {
+    background: linear-gradient(90deg, #123456, #2980b9);
+    color: white;
+    padding: 25px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+header h1 {
+    margin-bottom: 15px;
+}
+
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #f1c40f;
+}
+
+/* CONTENIDO */
+.contenido {
+    max-width: 850px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.contenido h2 {
+    color: #123456;
+    margin-bottom: 20px;
+}
+
+.contenido p {
+    margin-bottom: 20px;
+}
+
+
+.boton {
+    display: inline-block;
+    background-color: #2980b9;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.boton:hover {
+    background-color: #123456;
+    transform: scale(1.05);
+}
+
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    gap: 12px;
+    margin-top: 25px;
+}
+
+.formulario label {
+    font-weight: bold;
+    color: #123456;
+}
+
+.formulario input,
+.formulario textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 7px;
+    font-size: 15px;
+    outline: none;
+    transition: 0.3s;
+}
+
+.formulario input:focus,
+.formulario textarea:focus {
+    border-color: #2980b9;
+    box-shadow: 0 0 5px rgba(41,128,185,0.5);
+}
+
+.formulario button {
+    background-color: #2980b9;
+    color: white;
+    border: none;
+    padding: 14px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.formulario button:hover {
+    background-color: #123456;
+}
+
+
+footer {
+    background-color: #123456;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+
+@media (max-width: 600px) {*
+    nav ul {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .contenido {
+        margin: 20px;
+        padding: 20px;
+    }
+}

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Principal</title>
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+
+    <header>
+        <h1>Página Principal</h1>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Principal</a></li>
+                <li><a href="Contáctenos.html">Contáctenos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+
+<section class="carrusel">
+
+    <div class="imagenes">
+        <img src="imagenes/imagen1.jpg"
+            class="imagen activa"
+            alt="Primera imagen">
+
+        <img src="imagenes/imagen2.jpg"
+          class="imagen"
+          alt="Segunda imagen">
+    </div>
+
+    <button class="anterior" onclick="cambiarImagen(-1)">
+        &#10094;
+    </button>
+
+    <button class="siguiente" onclick="cambiarImagen(1)">
+        &#10095;
+    </button>
+
+</section>
+
+<script src="script.js"></script>
+
+
+    <main class="contenido">
+        <h2>Bienvenidos a nuestra página</h2>
+
+        <p>
+            Somos una empresa dedicada a brindar
+            servicios de calidad y atención al cliente.
+        </p>
+
+        <p>
+            En nuestra página podrás conocer más
+            sobre nosotros y comunicarte fácilmente.
+        </p>
+
+        <a class="boton" href="Contáctenos.html">
+            Contáctanos
+        </a>
+    </main>
+
+    <footer>
+        <p>Mi Página Web</p>
+    </footer>
+
+</body>
+</html>
